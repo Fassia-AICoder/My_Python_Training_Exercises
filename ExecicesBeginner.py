@@ -42,3 +42,56 @@ print(f"the sum is : {sum}")""" #the second way to resolve this exercice but her
                                 #so you must to saparat numbers by spaces.
 
 
+# Exercice 5 : Ask the user for a number. Print if it is even or odd.
+
+"""while True :
+    try :
+        numb = int(input("enter a number: "))
+        remainder = numb % 2 
+        if remainder == 0 :
+            print(f"{numb} is even")
+        else : 
+            print(f"{numb} is odd")
+        break
+    except ValueError :
+        numb = print("please enter a number only ")""" #here try-except help me to corect the ValueError
+                                                    #when the user put a letter instead of number 
+                                        #but if he put again a letter, I got again a ValueError so I 
+                                        #use while to ask again the user if do that and break permit me to exit in the loop
+ 
+
+# Exercice 6 : Print numbers from 1 to 6 using a for loop.
+
+"""for n in range(1,7) : 
+    print(n)"""
+
+
+# Exercice 7 : Print numbers from 5 to 1 using a while loop
+
+"""num = 5
+while num >= 1 : 
+    print(num)
+    num = num -1"""
+
+# Exercice 8 : Ask the user for a number. Print if it is positive or negative
+
+"""while True:
+    try : 
+        num = float(input("give me a number: "))
+        if num > 0 : 
+            print(f"{num} is a positive number")
+        elif num < 0 : 
+            print(f"{num} is a negative number") 
+        else : 
+            print(f"{num} is zero")
+        break
+    except ValueError :
+        print("please enter a number only")"""
+
+# Exercice 9 : Create a list with 3 fruits. Print the list.
+
+"""l = ["mangoes","oranges","banana"]
+print(l)"""
+
+"""t = ("black","yellow","red","white")
+print(t)"""
