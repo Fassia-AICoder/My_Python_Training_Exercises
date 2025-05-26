@@ -55,9 +55,10 @@ print(f"the sum is : {sum}")""" #the second way to resolve this exercice but her
         break
     except ValueError :
         numb = print("please enter a number only ")""" #here try-except help me to corect the ValueError
-                                                    #when the user put a letter instead of number 
-                                        #but if he put again a letter, I got again a ValueError so I 
-                                        #use while to ask again the user if do that and break permit me to exit in the loop
+                                                    #when the user put a letter instead of a number 
+                                        #but when my code print the message I put in my except,it finish after
+                                        #so I use while to ask again the user if he do that 
+                                        #and break permit me to exit in the loop
  
 
 # Exercice 6 : Print numbers from 1 to 6 using a for loop.
@@ -93,5 +94,37 @@ while num >= 1 :
 """l = ["mangoes","oranges","banana"]
 print(l)"""
 
+# Exercice10:Create a tuple with 4 colors. Print the tuple.
 """t = ("black","yellow","red","white")
 print(t)"""
+
+# Exercice11: Ask the user for a number. Print its square using a for loop.
+"""num = input("enter a number ")
+num = int(num)
+square = pow(num,2)
+print(f"the scare of {num} is {square}")""" #here I on't think I need to use loop
+                                        #to resolve this exercise
+
+# Exercice 12: Print all odd numbers from 1 to 9 using a for loop
+"""for n in range(1,10): 
+    remainder = n % 2
+    if remainder == 1: 
+        print(n, end="")""" #here I use end = "" to print the results in the same line
+
+# Exercise 13: Ask the user for a word. Print each letter on a new line using a for loop
+"""word = input("input a sentence ")
+for element in word:
+    print(element)"""
+
+# Exercise 14: Create a list with 5 numbers. Print the last number.
+"""l = [1,2,3,5]
+print(l[0])"""
+
+# Exercise 15: Create a tuple with 3 animals. Print the first animal.
+t = ("cat","boat","mouse")
+print(t[0])
+
+ 
+
+
+
