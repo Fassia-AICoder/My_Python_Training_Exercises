@@ -36,6 +36,11 @@ print(t)"""
 for element in word:
     print(element)"""
 
+# Exercise 15 : Create a tuple with 3 animals. Print the first animal.
+"""t = ("cat","boat","mouse")
+print(t[0])"""
+
+
 # Exercise 17 :Create a list with 4 names. Add a new name. Print the list
 """l = ["fassia","ssifa","K_FA","smoochi"]
 l.append("oulfa")
@@ -44,8 +49,7 @@ print(l)"""
 # Exercise 22: Ask the user for a word. Print how many letters it has.
 
 """word = input("Enter a word you want ")
-word = word.strip()
-if word.isalpha():
+if  word.strip() and word.isalpha():
     count = 0
     for element in word: 
         count = count + 1
@@ -67,7 +71,7 @@ print(letter_count) """
 """s = {"A", "B", 4}
 print(s)""" #Here If you make a set with {1, 2, 2, 3}, it becomes {1, 2, 3} (the extra 2 is removed).
             #It Doesn’t care about the order of item, for exemple {1, 2, 3} might print as {2, 1, 3} or {3, 1, 2}
-
+            #You can’t change items in a set like you can with a list (e.g., my_list[0] = 10). Instead, you add or remove items.
 
 # Exercise 27 : Create a tuple with 4 cities. Print the second and third city
 """t = ("Burkina", "Togo", "Ghana", "Ivoir")
@@ -81,12 +85,25 @@ while count<=4 :
     print(word)
     count = count +1"""
 
+# Exercise 31 : Create a set with 4 fruits. Add one fruit,remove one fruit and Print the set.
+"""s = {"mango", "banana","orange", "strawberie"}
+s.add("tomato")
+s.discard("orange")
+print(s)"""    #Here I can use add() to put one item in the set.
+            #Use remove() to take an item out (raises an error if the item isn’t there).
+            #Use discard() to remove an item safely (no error if it’s not there).
 
+#Exercise 33 : Create a list with 3 colors. Replace the first color with “red”. Print the list
 
+"""l = ["black","yellow","red","white"]
+l[0]="red"
+print(l)"""
 
-
-
-
+#Exercise 37 : Ask the user for a word. Print the last letter using a for loop.
+"""word = input("Give me a letter you want: ")
+for letter in word :
+    letter = word[-1]
+print(letter)"""
 
 
 
@@ -189,7 +206,7 @@ while num >= 1 :
 """num = input("enter a number ")
 num = int(num)
 square = pow(num,2)
-print(f"the scare of {num} is {square}")""" #here I on't think I need to use loop
+print(f"the scare of {num} is {square}")""" #here I don't think I need to use loop
                                         #to resolve this exercise
 
 
@@ -248,11 +265,11 @@ for element in l:               for element in l:
     s = s + element                 s = s + element          
     print(s)                    print(s)          """        
                                                         #this two code give 2 different ouput because in the
-                                                        #first code the print is inside the for that mean
+                                                        #first code the print is inside the for, that mean
                                                         #each time it do a sum it print the result.
                                                         #But the second code the print is in the same
                                                         #Indentation(outside the for) that mean it do the
-                                                        #sum and give after the result
+                                                        #sum and give after the total result
 
 
 # Exercise 24: Ask the user for a number. Print its multiplication table (1 to 10) using a for loop.
@@ -286,7 +303,7 @@ else:
 del l[0]
 print(l)"""
 
-#Exercise 29 : Ask the user for a number. Print all even numbers up to it using a for loop
+#Exercise 30 : Ask the user for a number. Print all even numbers up to it using a for loop
 """try:
     num = int(input("Enter a number: "))
     if num < 0:
@@ -296,3 +313,84 @@ print(l)"""
             print(i)
 except ValueError:
     print("Please enter a valid integer.")"""
+
+#Exercise 32 : Ask the user for a number. If it is between 1 and 10, print “Valid”. Else, print “Invalid”
+"""while True:
+    try:
+        num = int(input("Enter a number between 1 and 10: "))
+        if 1<=num<=10 :
+            print(f"{num} is valid")
+        else:
+            print(f"{num} is invalid")
+        break
+    except ValueError:
+        print("please!!! Enter a number between 1 and 10")"""
+
+#Exercise 34 : Print numbers from 1 to 15. Skip multiples of 3 using continue
+"""for i in range(1,15):
+    if i % 3 == 0:
+        continue
+    print(i)"""
+
+#Exercise 35 : Ask the user for a number. Print its factorial using a while loop.
+
+
+"""try:
+    num = int(input("Enter a number: "))
+    if num < 0:
+        print("Please enter a non-negative number (factorial is not defined for negative numbers).")
+    else:
+        factorial = 1
+        counter = 1
+        while counter <= num:
+            factorial *= counter
+            counter += 1
+        print(factorial)
+except ValueError:
+    print("Please enter a valid integer.")"""
+
+#Exercise 36 : Create a tuple with 5 numbers. Print the product of all numbers
+
+"""t = (1, 8, 2, 6, 3)
+p = 1 
+for element in t:
+     p = p * element
+print(p) """           #first way to do this exercise
+
+"""t = (1, 8, 2, 6, 3)
+p = 1 
+index = 0
+while index < len(t):
+    p = p * t[index]
+    index = index + 1
+print(p)"""                #second way to do this exercise
+
+#Exercise 38 : Create a list with 5 numbers. Print only numbers less than 20
+
+"""l = [22, 5, 6, 9, 54, 25, 20, 1, 0, 6, 3, 10, 15 ,12, 18, 19]
+for num in l : 
+    if num < 20 :
+        print(num)"""
+
+#Exercise 41 :  Ask the user for three numbers. Print their average using a for loop
+
+"""num1 = float(input("Enter your first number: "))
+num2 = float(input("Enter your second number: "))
+num3 = float(input("Enter your third number: "))
+sum = num1 + num2 + num3 
+div = sum / 3
+print(div)""" # First way to do this exercise , here I repeat 3 time the input 
+
+try:
+    numbers = []
+    for i in range(3):
+        num = float(input("Enter your first number:"))
+        numbers.append(num) 
+    sum = 0 
+    for numb in numbers :
+        sum = sum + numb
+    div = sum /3
+    print(div)
+except ValueError:
+    print("Try again")
+
