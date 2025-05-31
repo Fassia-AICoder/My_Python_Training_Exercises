@@ -105,10 +105,29 @@ for letter in word :
     letter = word[-1]
 print(letter)"""
 
+#Exercise 37 : Create a list with 4 animals. Print the list in reverse order.
+"""l = ["cat", "dog", "chicken", "goat"]
+print(l[::-1])""" #first way to resolve this exercise.
+                #The syntax list[start:end:step] with step = -1 reverses the list.
+                #No start or end means the entire list ([:]), and -1 step reverses it.~
 
+"""l = ["cat", "dog", "chicken", "goat"]
+l.reverse()
+print(l)""" #the second way with using reverse method 
 
+#Exercise 43 : Ask the user for a word. Check if it starts with “s” using if.
+"""word = input("Input a word you want: ")
+first_letter = word[0]
+if first_letter == "s":
+    print(f"{word} starts with s")
+else:
+    print(f"{word} don't starts with s")"""
 
+#Exercise 34 : Create a tuple with 3 fruits. Print how many fruits are in the tuple
 
+"""fruits = ("banana", "orange", "apple")
+l= len(fruits)
+print(l)"""
 
 
 
@@ -381,7 +400,7 @@ sum = num1 + num2 + num3
 div = sum / 3
 print(div)""" # First way to do this exercise , here I repeat 3 time the input 
 
-try:
+"""try:
     numbers = []
     for i in range(3):
         num = float(input("Enter your first number:"))
@@ -392,5 +411,14 @@ try:
     div = sum /3
     print(div)
 except ValueError:
-    print("Try again")
+    print("Try again")"""
 
+#Exercise 44 : Print numbers from 1 to 12. Stop if the number is 9 using break.
+"""for i in range(1,12):
+    if i == 9:
+        break
+    print(i)"""
+
+#Exercise 49 :Create a set with 4 numbers. Check if 10 is in the set.
+"""numbers = {4, 5, 6, 8, 10}
+print(10 in numbers)"""
