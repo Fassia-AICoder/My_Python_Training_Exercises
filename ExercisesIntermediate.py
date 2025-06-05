@@ -128,7 +128,7 @@ print(book_1.title)"""
 file_exists = os.path.exists("test.txt")
 print(file_exists)"""
 
-#Exercise 27: Create a class called Vehicle with a method to print its type. Create one Vehicle and call the method
+#Exercise 28: Create a class called Vehicle with a method to print its type. Create one Vehicle and call the method
 
 """class Vehicle:
     def __init__(self,color,type):
@@ -142,7 +142,7 @@ vehicle_1 = Vehicle("red","toyoota")
 print(vehicle_1.color)
 print(vehicle_1.types())"""
 
-#Exercise 27:Create a class called Triangle with base and height attributes. Add a method to calculate area
+#Exercise 29:Create a class called Triangle with base and height attributes. Add a method to calculate area
 
 """class Triangle:
     def __init__(self,base,height):
