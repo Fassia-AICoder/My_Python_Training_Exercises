@@ -9,7 +9,7 @@
 
 
 
-                                        # Exercises with letters
+                      # Exercises with letters
 
 
 # Exercise 1 : Print "Learn Python" on the screen 
@@ -131,22 +131,7 @@ print(l)"""
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                         # Exercises with numbers
+                       # Exercises with numbers
 
 
 
